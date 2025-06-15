@@ -1,0 +1,78 @@
+/* 1. Modern Reset (Inspired by Josh W. Comeau & Piccalilli) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  /* Enable native dark/light mode support */
+  color-scheme: light dark;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: light-dark(#f3f4f6, #242424);
+  color: light-dark(#333, #eee);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 2. Base Layout */
+#root {
+  height: 100%;
+  isolation: isolate;
+}
+
+/* 3. Global utility classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+/* 4. Theme-specific variables using light-dark() */
+:root {
+  --bg-light: #f3f4f6;
+  --bg-dark: #242424;
+  --text-light: #333333;
+  --text-dark: #eeeeee;
+
+  --accent-add: #4caf50;
+  --accent-remove: #f44336;
+  --accent-reset: #ff9800;
+}
+
+/* 5. Example: toggle dark mode via class */
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+body.dark-mode .card {
+  background-color: #3c3c3c;
+}
