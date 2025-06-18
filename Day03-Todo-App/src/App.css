@@ -1,0 +1,101 @@
+/* Gradient background and general layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Main container */
+.App {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+#root{
+      margin-top: 58px;
+}
+
+/* Header */
+.App h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 12px;
+  font-size: 16px;
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 15px;
+  background: #fff;
+  color: #764ba2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+td button {
+  background-color: #fff;
+  color: #764ba2;
+  margin-right: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+td button:hover {
+  background-color: #eee;
+}
+
+p {
+  font-size: 18px;
+  color: #e2e2e2;
+}
