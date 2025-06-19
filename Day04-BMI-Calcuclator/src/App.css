@@ -1,0 +1,112 @@
+/* Reset + Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main App Container */
+.app {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.app h1 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group input {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #7f8ff4;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(127, 143, 244, 0.2);
+}
+
+/* Error Message */
+.error {
+  margin-top: 10px;
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+/* Result Card */
+.result-card {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 16px;
+  color: white;
+  font-size: 1.1rem;
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Gradient Themes */
+.result-card.underweight {
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+}
+
+.result-card.normal {
+  background: linear-gradient(135deg, #56ab2f, #a8e063);
+}
+
+.result-card.overweight {
+  background: linear-gradient(135deg, #f953c6, #b91d73);
+}
+
+/* Tip Message */
+.tip {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
