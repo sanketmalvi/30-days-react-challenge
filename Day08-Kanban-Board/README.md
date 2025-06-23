@@ -1,12 +1,37 @@
-# React + Vite
+# 🧠 Kanban Board – Day 08 of #30DaysOfReact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a fully interactive **Kanban Board** built using **React + TailwindCSS + Drag-and-Drop**.
 
-Currently, two official plugins are available:
+> Built as part of my 30-day React learning sprint to showcase real-world skills and learn in public.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Drag & Drop task management (`@hello-pangea/dnd`)
+- 📝 Add Task Modal (with column selection)
+- 💾 LocalStorage support (persistent state)
+- 🎨 Dynamic Color Tags for tasks
+- ✅ Checkbox to mark tasks as completed
+- 🎨 Elegant TailwindCSS UI
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **TailwindCSS**
+- **@hello-pangea/dnd**
+- **uuid**
+- **localStorage**
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/sanketmalvi/kanban-board.git
+cd kanban-board
+npm install
+npm run dev
+```
