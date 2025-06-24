@@ -65,6 +65,13 @@ export default function KanbanBoard() {
     });
   };
 
+  const deleteTask = (colKey, taskId) => {
+    setColumns({
+      ...columns,
+      [colKey]: columns[colKey].filter((task) => task.id !== taskId),
+    });
+  };
+
   const randomTag = () => {
     const tags = ["#facc15", "#34d399", "#60a5fa", "#f472b6"];
     return tags[Math.floor(Math.random() * tags.length)];
@@ -117,10 +124,17 @@ export default function KanbanBoard() {
                                 {task.text}
                               </span>
                             </div>
-                            <span
-                              className="w-3 h-3 rounded-full"
-                              style={{ backgroundColor: task.tag }}
-                            ></span>
+                            <div className="flex gap-2 items-center">
+                              <span
+                                className="w-3 h-3 rounded-full"
+                                style={{ backgroundColor: task.tag }}
+                              ></span>
+                              <button
+                                onClick={() => deleteTask(colKey, task.id)}
+                                className="text-red-500 hover:text-red-700 text-sm"
+                                title="Delete task"
+                              >✖</button>
+                            </div>
                           </div>
                         </div>
                       )}
