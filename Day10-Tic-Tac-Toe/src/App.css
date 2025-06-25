@@ -1,0 +1,50 @@
+/* Neon Colors */
+.text-neon-pink {
+  color: #ff4dd2;
+}
+
+.text-neon-green {
+  color: #00ffcc;
+}
+
+/* Glowing Drop Shadow */
+.drop-shadow-neon {
+  text-shadow: 0 0 5px #fff, 0 0 10px currentColor, 0 0 20px currentColor;
+}
+
+/* Box Glow */
+.neon-box {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3),
+              0 0 20px rgba(0, 255, 255, 0.3),
+              0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+/* Animate tiles appearing */
+@keyframes tileFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-tile {
+  animation: tileFade 0.4s ease-in-out;
+}
+
+/* Animate X/O popping in */
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-pop {
+  animation: pop 0.25s ease-out;
+}
