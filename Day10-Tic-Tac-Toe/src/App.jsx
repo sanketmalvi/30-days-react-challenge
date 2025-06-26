@@ -1,5 +1,3 @@
-// Day 09: Tic Tac Toe Game with Neon Styling + Animations
-
 import { useState } from 'react';
 import './App.css';
 const initialBoard = Array(9).fill(null);
