@@ -32,7 +32,8 @@ const GitHubFinder = () => {
       }
       setRepos(repoData.slice(0, 6));
 
-      // Language aggregation
+
+    
       const langMap = {};
       await Promise.all(
         repoData.slice(0, 10).map(async (repo) => {
