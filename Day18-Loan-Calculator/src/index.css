@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@media (prefers-color-scheme: dark) {
+  html:not(.dark) {
+    color-scheme: light;
+  }
+}
