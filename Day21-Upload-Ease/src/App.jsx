@@ -1,4 +1,3 @@
-// UploadEase - Enhanced: Support all file types, drag & drop, preview, rename, delete, download, timestamp, and modal view with icons
 
 import { useState, useRef } from "react";
 import axios from "axios";
