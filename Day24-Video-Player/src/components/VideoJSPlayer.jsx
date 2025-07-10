@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import VideoJS from './VideoJS';
+import VideoJS from './videojs';
 import './VideoPlayer.css';
 
 const VideoJSPlayer = () => {
@@ -38,7 +38,7 @@ const VideoJSPlayer = () => {
   return (
     <section className="video-container">
       <div className="video-wrapper">
-        <h2 className="video-title">🎬 Ultimate Video Player</h2>
+        <h2 className="video-title">Video Player</h2>
         <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
       </div>
     </section>
