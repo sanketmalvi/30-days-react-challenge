@@ -1,4 +1,3 @@
-// File: src/App.jsx
 import React, { useEffect, useState, useRef } from 'react';
 import logo from './assets/musicMania.jpg';
 
