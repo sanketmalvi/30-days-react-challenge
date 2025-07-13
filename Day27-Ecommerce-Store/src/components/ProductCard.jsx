@@ -12,7 +12,6 @@ export default function ProductCard({ product }) {
       />
       <h3 className="text-lg font-semibold mb-1 truncate">{product.title}</h3>
 
-      {/* Manual truncation: use max height & overflow */}
       <p className="text-gray-600 text-sm mb-2 overflow-hidden" style={{ maxHeight: '3.6em', lineHeight: '1.2em' }}>
         {product.description}
       </p>
