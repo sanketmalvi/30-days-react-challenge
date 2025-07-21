@@ -1,0 +1,49 @@
+"Hey folks! It's Day 8 of my 30-day React challenge where I build one project every day to sharpen my dev skills and showcase my work."
+
+🍱 [0:08 – 0:18 | App UI Overview]
+🎥 Show: Screen recording scrolling through the UI (Home, Search, Recipe Detail, Favorites)
+🗣️
+"Today I built a sleek Food Recipe App using React, TailwindCSS, and the Forkify API. You can search recipes, check ingredients, and save your favorites."
+
+📦 [0:18 – 0:25 | What I Learned]
+🎥 Overlay icons of hooks/context/router while talking
+🗣️
+"I explored React Context for global state, React Router for dynamic routing, and made real-time API calls. Plus, added a dark mode toggle and page animations."
+
+💻 [0:25 – 0:50 | Code Walkthrough]
+🎥 Split into sections, zoom in on files while mentioning
+
+✅ 1. context/index.jsx
+🗣️
+"This handles all the app’s state: search value, fetched recipes, and favorites. handleSubmit fetches data from the API and updates the state."
+
+🎥 Show: handleSubmit() and favoritesList logic
+
+✅ 2. components/navbar/index.jsx
+🗣️
+"Navbar has a search bar and navigation links. I added a dark mode toggle button to switch themes globally using a class on body."
+
+🎥 Show: <form>, setSearchParam, and Toggle Dark Mode button
+
+✅ 3. pages/home/index.jsx
+🗣️
+"This page maps through the recipeList and renders RecipeItem cards."
+
+🎥 Show: .map() and <RecipeItem /> usage
+
+✅ 4. pages/details/index.jsx
+🗣️
+"Clicking a recipe shows full ingredients. I used useParams to fetch by ID, and a conditional button to add/remove favorites."
+
+🎥 Show: useEffect → fetch by ID + "Add to Favorites" button logic
+
+✨ [0:50 – 0:58 | Final Touches]
+🎥 Show: Dark mode toggle, card animations
+🗣️
+"I also added smooth transitions, dark mode, and responsive design with TailwindCSS to enhance UX."
+
+🧲 [0:58 – 1:00 | Call to Action]
+🎥 Facecam or App UI with text overlay
+🗣️
+"Follow for more dev projects. Full code is on GitHub — link in bio!"
+
